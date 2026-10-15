@@ -1,8 +1,3 @@
-/* ==========================================================================
-   BUDGETBASICS - RESPONSIVE STYLES
-   Breakpoints: 1200px, 992px, 768px, 576px, 425px, 375px, 320px
-   No horizontal overflow, mobile-friendly touch targets, adaptive chatbot
-   ========================================================================== */
 
 /* Large Laptops / Small Desktops (max-width: 1200px) */
 @media (max-width: 1200px) {

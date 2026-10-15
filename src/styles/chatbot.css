@@ -1,10 +1,4 @@
-/* ==========================================================================
-   BUDGETBASICS - PERSISTENT FLOATING BUDGETBEE ASSISTANT
-   Side/bottom-right floating assistant, accessible across entire SPA
-   Soft lavender theme, refined 'B' + bee-inspired avatar, NO emojis
-   ========================================================================== */
 
-/* Floating Launcher Button */
 .bb-assistant-launcher {
   position: fixed;
   bottom: 28px;

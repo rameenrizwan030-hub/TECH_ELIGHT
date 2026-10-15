@@ -1,52 +1,46 @@
-/* ==========================================================================
-   BUDGETBASICS - CORE DESIGN SYSTEM
-   Theme: Soft Pretty Lavender, Light Purple, Soft Pink-Lavender Undertones,
-   White, Slightly Darker Purple Accents, Dark Lavender for Primary Buttons.
-   Consistent Variables, High-End Micro-Interactions, Zero Emojis.
-   ========================================================================== */
 
 :root {
   /* Complete Unified Visual Identity Variables */
-  --lavender-primary: #7A54C4;      /* Rich, refined lavender-purple */
-  --lavender-light:   #F3EEFA;      /* Soft soothing pastel lavender */
-  --lavender-soft:    #FAF8FD;      /* Gentle ambient background lavender */
-  --lavender-dark:    #583397;      /* Dark lavender/purple for primary buttons & headings */
-  --purple-accent:    #8E68D9;      /* Vibrant yet soft purple accent */
-  --pink-lavender:    #F7EFFB;      /* Gentle subtle pink-lavender undertone */
-  --white:            #FFFFFF;      /* Clean pure white */
-  --text-primary:     #261D3A;      /* Deep, readable slate-purple text */
-  --text-secondary:   #6B6183;      /* Balanced secondary text */
+  --lavender-primary: #7a54c4; /* Rich, refined lavender-purple */
+  --lavender-light: #f3eefa; /* Soft soothing pastel lavender */
+  --lavender-soft: #faf8fd; /* Gentle ambient background lavender */
+  --lavender-dark: #583397; /* Dark lavender/purple for primary buttons & headings */
+  --purple-accent: #8e68d9; /* Vibrant yet soft purple accent */
+  --pink-lavender: #f7effb; /* Gentle subtle pink-lavender undertone */
+  --white: #ffffff; /* Clean pure white */
+  --text-primary: #261d3a; /* Deep, readable slate-purple text */
+  --text-secondary: #6b6183; /* Balanced secondary text */
 
   /* Component Aliases & Tokens for Seamless Compatibility */
-  --bb-lav-50:  var(--lavender-soft);
+  --bb-lav-50: var(--lavender-soft);
   --bb-lav-100: var(--lavender-light);
-  --bb-lav-200: #E6DCF5;
-  --bb-lav-300: #D5C5EC;
-  --bb-lav-400: #B79FE0;
+  --bb-lav-200: #e6dcf5;
+  --bb-lav-300: #d5c5ec;
+  --bb-lav-400: #b79fe0;
   --bb-lav-500: var(--purple-accent);
   --bb-lav-600: var(--lavender-primary);
   --bb-lav-700: var(--lavender-dark);
   --bb-lav-800: #492880;
-  --bb-lav-900: #341A5C;
+  --bb-lav-900: #341a5c;
 
-  --bb-white:       var(--white);
-  --bb-bg-main:     var(--lavender-soft);
-  --bb-bg-subtle:   var(--pink-lavender);
-  --bb-card-bg:     var(--white);
-  --bb-text-main:   var(--text-primary);
-  --bb-text-muted:  var(--text-secondary);
-  --bb-text-subtle: #958BA6;
-  --bb-border:      #E8E0F2;
-  --bb-border-subtle: #F2ECF8;
-  --bb-border-hover:  #CDBEE5;
+  --bb-white: var(--white);
+  --bb-bg-main: var(--lavender-soft);
+  --bb-bg-subtle: var(--pink-lavender);
+  --bb-card-bg: var(--white);
+  --bb-text-main: var(--text-primary);
+  --bb-text-muted: var(--text-secondary);
+  --bb-text-subtle: #958ba6;
+  --bb-border: #e8e0f2;
+  --bb-border-subtle: #f2ecf8;
+  --bb-border-hover: #cdbee5;
 
   /* Functional Status */
-  --bb-success:     #388E67;
-  --bb-success-bg:  #E8F5EF;
-  --bb-warning:     #B7791F;
-  --bb-warning-bg:  #FEF8E7;
-  --bb-danger:      #A8384D;
-  --bb-danger-bg:   #FDEBED;
+  --bb-success: #388e67;
+  --bb-success-bg: #e8f5ef;
+  --bb-warning: #b7791f;
+  --bb-warning-bg: #fef8e7;
+  --bb-danger: #a8384d;
+  --bb-danger-bg: #fdebed;
 
   /* Shadows & Glows */
   --bb-radius-sm: 8px;
@@ -56,18 +50,21 @@
   --bb-radius-pill: 9999px;
 
   --bb-shadow-subtle: 0 4px 20px rgba(88, 51, 151, 0.04);
-  --bb-shadow-card:   0 12px 34px rgba(88, 51, 151, 0.07);
-  --bb-shadow-hover:  0 18px 45px rgba(88, 51, 151, 0.12), 0 0 20px rgba(247, 239, 251, 0.8);
-  --bb-shadow-float:  0 20px 50px rgba(88, 51, 151, 0.16);
-  --bb-shadow-glow:   0 0 25px rgba(122, 84, 196, 0.25);
+  --bb-shadow-card: 0 12px 34px rgba(88, 51, 151, 0.07);
+  --bb-shadow-hover:
+    0 18px 45px rgba(88, 51, 151, 0.12), 0 0 20px rgba(247, 239, 251, 0.8);
+  --bb-shadow-float: 0 20px 50px rgba(88, 51, 151, 0.16);
+  --bb-shadow-glow: 0 0 25px rgba(122, 84, 196, 0.25);
 
   /* Typography: Headings = Fredoka Bold, Body = Poppins Regular, Navbar & Buttons = Poppins SemiBold, Small Labels = Poppins Medium / SemiBold */
-  --bb-font-heading: 'Fredoka', cursive, system-ui, -apple-system, sans-serif;
-  --bb-font-body:    'Poppins', system-ui, -apple-system, sans-serif;
+  --bb-font-heading: "Fredoka", cursive, system-ui, -apple-system, sans-serif;
+  --bb-font-body: "Poppins", system-ui, -apple-system, sans-serif;
 }
 
 /* Base Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -89,7 +86,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--bb-font-heading);
   color: var(--bb-text-main);
   font-weight: 700;
@@ -105,16 +107,27 @@ p {
   margin-bottom: 1rem;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: var(--bb-font-body);
 }
 
-.btn, .btn-bb-primary, .btn-bb-outline, .btn-bb-subtle {
+.btn,
+.btn-bb-primary,
+.btn-bb-outline,
+.btn-bb-subtle {
   font-family: var(--bb-font-body);
   font-weight: 600;
 }
 
-small, .small, .bb-eyebrow, .badge, label, .form-label {
+small,
+.small,
+.bb-eyebrow,
+.badge,
+label,
+.form-label {
   font-family: var(--bb-font-body);
   font-weight: 500;
 }
@@ -149,7 +162,11 @@ img {
 .scroll-progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, var(--lavender-primary), var(--lavender-dark));
+  background: linear-gradient(
+    90deg,
+    var(--lavender-primary),
+    var(--lavender-dark)
+  );
   transition: width 0.1s ease-out;
 }
 
@@ -206,7 +223,10 @@ img {
   border-radius: var(--bb-radius-lg);
   padding: 26px;
   box-shadow: var(--bb-shadow-subtle);
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
+  transition:
+    transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.28s ease;
   position: relative;
   overflow: hidden;
 }
@@ -300,7 +320,7 @@ img {
 .btn-bb-subtle:hover {
   background: var(--pink-lavender);
   border-color: var(--bb-border-hover);
-  color: #341A5C !important;
+  color: #341a5c !important;
 }
 
 /* Section Spacing */
@@ -319,7 +339,9 @@ img {
 .reveal {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -370,12 +392,13 @@ img {
 
 .back-to-top:hover {
   background: var(--lavender-light);
-  color: #341A5C;
+  color: #341a5c;
   border-color: var(--bb-border-hover);
 }
 
 /* Form Controls Focus */
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   border-color: var(--lavender-primary);
   box-shadow: 0 0 0 3px rgba(122, 84, 196, 0.18);
   outline: none;

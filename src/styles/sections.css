@@ -1,11 +1,4 @@
-/* ==========================================================================
-   BUDGETBASICS - SECTIONS STYLING
-   About, Learning, Planning, Calculators, Needs vs Wants, Resources,
-   Gallery, Checklist, Contact, and Footer
-   ========================================================================== */
 
-/* --- ABOUT US SECTION --- */
-/* --- ABOUT US SECTION (MATCHING SCREENSHOT REFERENCE) --- */
 #about.bb-section {
   background: linear-gradient(180deg, #FBF8FE 0%, #F5EFFC 45%, #FBF9FE 100%);
   position: relative;
